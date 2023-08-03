@@ -16,14 +16,14 @@ describe Solver do
   end
 
   describe '#Every input string is reverse' do
-  it 'String A' do
-    output = solver.reverse('Theodore')
-    expect(output).to eq('erodoehT')
-  end
+    it 'String A' do
+      output = solver.reverse('Theodore')
+      expect(output).to eq('erodoehT')
+    end
 
-  it 'String B' do
-    output = solver.reverse('Paul')
-    expect(output).to eq('luaP')
+    it 'String B' do
+      output = solver.reverse('Paul')
+      expect(output).to eq('luaP')
+    end
   end
-end
 end
