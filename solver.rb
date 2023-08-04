@@ -1,3 +1,6 @@
+# This class represents a solver for a specific problem.
+# frozen_string_literal: true
+
 class Solver
   def factorial(num)
     raise ArgumentError, 'factorial is not defined for negative numbers' if num.negative?
