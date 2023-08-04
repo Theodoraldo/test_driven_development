@@ -33,4 +33,28 @@ RSpec.describe Solver do
       end
     end
   end
+
+  describe '#fizzbuzz' do
+    context 'fizzbuzz receives an argument test' do 
+      it 'returns "fizzbuzz" for multiples of both 3 and 5' do
+        output = solver.fizzbuzz(15)
+        expect(output).to eq('fizzbuzz')
+      end
+
+      it 'returns "fizz" for multiples of 3' do
+        output = solver.fizzbuzz(3)
+        expect(output).to eq('fizz')
+      end
+
+      it 'returns "buzz" for multiples of 5' do
+        output = solver.fizzbuzz(5)
+        expect(output).to eq('buzz')
+      end
+
+      it 'returns the number as a string for non-multiples of 3 and 5' do
+        output = solver.fizzbuzz(7)
+        expect(output).to eq(7.to_s)
+      end
+    end
+  end
 end

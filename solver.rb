@@ -16,4 +16,7 @@ class Solver
     end
     reversed.to_s
   end
+
+  def fizzbuzz(number)
+  end
 end
