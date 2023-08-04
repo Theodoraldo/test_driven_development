@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # This class represents a solver for a specific problem.
 class Solver
   def factorial(num)
