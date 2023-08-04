@@ -22,4 +22,15 @@ RSpec.describe Solver do
       end
     end
   end
+
+  describe ' => reverse -> ' do
+    context ' recieve one argument to reverse ' do
+      it 'when apple ' do
+        expect(solver.reverse('apple')).to eq('elppa')
+      end
+      it 'when !emesrever' do
+        expect(solver.reverse('!emesrever')).to eq('reverseme!')
+      end
+    end
+  end
 end
