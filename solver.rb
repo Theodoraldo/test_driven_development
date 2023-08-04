@@ -6,4 +6,14 @@ class Solver
     (1..num).each { |i| result *= i }
     result
   end
+
+  def reverse(word)
+    reversed = ''
+    i = word.length - 1
+    while i >= 0
+      reversed += word[i]
+      i -= 1
+    end
+    reversed.to_s
+  end
 end
